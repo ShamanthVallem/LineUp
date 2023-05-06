@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            To Do list
+        </div>
+        <!-- Input task add to active list -->
+        <div class="taskAdder">
+            <textarea id="inputTask" cols="30" rows="2" placeholder="Add new task"></textarea>
+            <input type="datetime-local" name="inputDate" id="inputDate">
+            <button id = "addTask" value = "addTask">+</button>
+        </div>
+
+        <!-- display error if task is not entered and add task is clicked -->
+        <p id="error"></p>
+
+        <!-- Active tasks display -->
+        <div id="taskDisplayArea">
+            <div id="activeTaskList">
+                <p class="Sideheading">Active tasks:</p>
+            </div>
+
+            <!-- Seperating line -->
+            <hr>
+
+            <!-- Completed tasks display -->
+            <div id="completedTaskList">
+                <p class="Sideheading">Completed tasks:</p>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <!-- Script -->
+    <script src="new_script.js"></script>
+</body>
+</html>
